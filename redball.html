@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src= "https://storage.googleapis.com/ics-redball/redball.js"></script>
+        <script type="text/javascript">
+            function sayHello(){
+                alert('Hi there!');
+            }
+            
+            function moveRight(){
+                redball.left = redball.left + 5;
+            }
+            
+            function moveTop(){
+                redball.top= redball.top - 5;
+            }
+            
+            function moveLeft(){
+                redball.left = redball.left - 5;
+            }
+            
+            function moveBottom(){
+                redball.top = redball.top + 5;
+            }
+            
+            function moveSquare(){
+                //slide right//
+                 moveRight();
+                 moveRight();
+                 moveRight();
+                 moveRight();
+                 moveRight();
+                 moveRight();
+                 //slide down//
+                 moveBottom();
+                 moveBottom();
+                 moveBottom();
+                 moveBottom();
+                 moveBottom();
+                 moveBottom();
+                 //slide left//
+                 moveLeft();
+                 moveLeft();
+                 moveLeft();
+                 moveLeft();
+                 moveLeft();
+                 moveLeft();
+                 //slide up//
+                 moveTop();
+                 moveTop();
+                 moveTop();
+                 moveTop();
+                 moveTop();
+                 moveTop();
+            }
+            
+            </script>
+    </head>
+    <body>
+        <img id ="redball" src="http://lrn.icstars.org/redball.jpg" />
+        <button onclick="sayHello()">Hello world</button>
+        <button onclick="moveRight()" > Move Right </button>
+        <button onclick="moveTop()" > Move Top </button>
+        <button onclick="moveLeft()" > Move Left </button>
+        <button onclick="moveBottom()" > Move Bottom </button>
+        <button onclick="moveSquare()" > Move Square </button>
+    </body>
+</html>
