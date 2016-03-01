@@ -8,19 +8,19 @@
             }
             
             function moveRight(){
-                redball.left = redball.left + 5;
+                redball.left = redball.left + 10;
             }
             
             function moveTop(){
-                redball.top= redball.top - 5;
+                redball.top= redball.top - 10;
             }
             
             function moveLeft(){
-                redball.left = redball.left - 5;
+                redball.left = redball.left - 10;
             }
             
             function moveBottom(){
-                redball.top = redball.top + 5;
+                redball.top = redball.top + 10;
             }
             
             function moveSquare(){
@@ -94,6 +94,55 @@
                 moveLeft();
                 moveLeft();
             }
+            
+            function moveTriangle(){
+             moveBottom();
+             moveBottom();
+             moveBottom();
+             
+             moveRight();
+             moveRight();
+             moveRight();
+             
+             moveUpLeft();
+            }
+            
+            function octagon(){
+                
+                moveRight(); 
+                moveRight();
+                moveRight();
+                
+                moveBottom(); moveRight();
+                moveBottom(); moveRight();
+                moveBottom(); moveRight();
+                
+                moveBottom();
+                moveBottom();
+                moveBottom();
+                
+                moveBottom(); moveLeft();
+                moveBottom(); moveLeft();
+                moveBottom(); moveLeft();
+                
+                moveLeft();
+                moveLeft();
+                moveLeft();
+                
+                moveTop(); moveLeft();
+                moveTop(); moveLeft();
+                moveTop(); moveLeft();
+                
+                moveTop();
+                moveTop();
+                moveTop();
+                
+                moveTop(); moveRight();
+                moveTop(); moveRight();
+                moveTop(); moveRight();
+                
+            }
+          
             </script>
     </head>
     <body>
@@ -108,6 +157,7 @@
         <button onclick="moveDownRight()"> Move down right </button>
         <button onclick="moveUpRight()"> Move up right </button>
         <button onclick="moveUpLeft()"> Move up left </button>
-        
+        <button onclick="moveTriangle()"> Move Triangle </button>
+        <button onclick="octagon()"> Move octagon </button>
     </body>
 </html>
