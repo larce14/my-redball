@@ -53,7 +53,47 @@
                  moveTop();
                  moveTop();
             }
+            function moveDownLeft(){
+                //move down
+                moveBottom();
+                moveBottom();
+                moveBottom();
+                //move left
+                moveLeft();
+                moveLeft();
+                moveLeft();
+            }
             
+            function moveDownRight(){
+                //move down
+                moveBottom();
+                moveBottom();
+                moveBottom();
+                //move right
+                moveRight();
+                moveRight();
+                moveRight();
+            }
+            
+            function moveUpRight(){
+                moveTop();
+                moveTop();
+                moveTop();
+                //move right
+                moveRight();
+                moveRight();
+                moveRight();
+            }
+            
+            function moveUpLeft(){
+                moveTop();
+                moveTop();
+                moveTop();
+                
+                moveLeft();
+                moveLeft();
+                moveLeft();
+            }
             </script>
     </head>
     <body>
@@ -64,5 +104,10 @@
         <button onclick="moveLeft()" > Move Left </button>
         <button onclick="moveBottom()" > Move Bottom </button>
         <button onclick="moveSquare()" > Move Square </button>
+        <button onclick="moveDownLeft()"> Move down left </button>
+        <button onclick="moveDownRight()"> Move down right </button>
+        <button onclick="moveUpRight()"> Move up right </button>
+        <button onclick="moveUpLeft()"> Move up left </button>
+        
     </body>
 </html>
