@@ -8,19 +8,36 @@
             }
             
             function moveRight(){
-                redball.left = redball.left + 10;
+                if(redball.left==445){
+                    console.log('Right Wall Hit!');
+                } else {
+                redball.left = redball.left + 5;
+                }
             }
             
             function moveTop(){
-                redball.top= redball.top - 10;
+                if(redball.top == 0){
+                    console.log('Top wall Hit!');
+                } else {
+                    redball.top= redball.top - 5;
+                }
             }
             
             function moveLeft(){
-                redball.left = redball.left - 10;
+                if(redball.left == -5){
+                    console.log("left wall hit!");
+                } else {
+                    redball.left = redball.left - 5;
+                } 
             }
             
+            
             function moveBottom(){
-                redball.top = redball.top + 10;
+                if(redball.top == 285){
+                    console.log('Bottom wall Hit!');
+                } else {
+                    redball.top = redball.top + 5;
+                }
             }
             
             function moveSquare(){
@@ -164,4 +181,5 @@
         <button onclick="moveTriangle()"> Move Triangle </button>
         <button onclick="octagon()"> Move octagon </button>
     </body>
+    
 </html>
