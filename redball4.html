@@ -26,19 +26,56 @@
               parag2.fadeIn();
           }
           
+          function moveRight() {
+           var right =
+           $("#redball");
+           right.animate({"left":"+=10"},
+           1000,"linear");
+          }
+          
           function moveTop(){
               var ball = 
               $("#redball");
               ball.animate({"top":"-=10px"},
-              10,"linear");
+              1000,"linear");
+          }
+          
+          function moveLeft(){
+           var left =
+           $("#redball");
+           left.animate({"left":"-=10px"},
+           1000,"linear");
           }
           
           function moveDownLeft() {
              var dnlf =
              $("#redball");
-             dnlf.animate({"left":"+=10","top":"+=10"},
+             dnlf.animate({"left":"-=10","top":"+=10"},
              1000,"linear");
           }
+          
+          function moveBottom(){
+           var bottom = 
+           $("#redball");
+           bottom.animate({"top":"+=10"},
+           1000,"linear");
+          }
+          
+           function moveSquare(){
+           var square =
+           $("#redball");
+           square.animate({"top":"-=7"},
+           1000, "linear");
+           square.animate({"left":"+=10"},
+           1000, "linear");
+           square.animate({"top":"+=7"},
+           1000, "linear");
+           square.animate({"left":"-=10"},
+           1000, "linear");
+            square.animate({"top":"-=7"},
+           1000, "linear");
+          }
+          
       </script>
       <script type="text/javascript" src= "https://code.jquery.com/jquery-2.2.1.min.js"></script>
   </head>
