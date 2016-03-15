@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <style>
+          #redball {
+              position: absolute;
+          }
+          
+          #dwnlft {
+              position:absolute;
+          }
+        
+      </style>
+      
+      
+      <script>
+          function pfadeout(){
+              var myParagraph = 
+              $("#p1");
+              myParagraph.fadeOut();
+          }
+          
+          function pfadein(){
+              var parag2 =
+              $("#p1");
+              parag2.fadeIn();
+          }
+          
+          function moveTop(){
+              var ball = 
+              $("#redball");
+              ball.animate({"top":"-=10px"},
+              10,"linear");
+          }
+          
+          function moveDownLeft() {
+             var dnlf =
+             $("#redball");
+             dnlf.animate({"left":"+=10","top":"+=10"},
+             1000,"linear");
+          }
+      </script>
+      <script type="text/javascript" src= "https://code.jquery.com/jquery-2.2.1.min.js"></script>
+  </head>
+  <body>
+      <p id="p1">
+          Any way you want it thats the way you need it, anyway you want it. dun da da da da da dun dun.
+      </p>
+      
+      <p id="p2"> 
+          So hold tight, hooold tight , oh every night! da dun da da da dun da da dun dun.
+      </p>
+       <img id ="redball" src="http://lrn.icstars.org/redball.jpg" />
+        <button onclick="sayHello()">Hello world</button>
+        <button onclick="moveRight()" > Move Right </button>
+        <button onclick="moveTop()" > Move Top </button>
+        <button onclick="moveLeft()" > Move Left </button>
+        <button onclick="moveBottom()" > Move Bottom </button>
+        <button onclick="moveSquare()" > Move Square </button>
+        <button onclick="moveDownLeft()"> Move down left </button>
+        <button onclick="moveDownRight()"> Move down right </button>
+        <button onclick="moveUpRight()"> Move up right </button>
+        <button onclick="moveUpLeft()"> Move up left </button>
+        <button onclick="moveTriangle()"> Move Triangle </button>
+        <button onclick="octagon()"> Move octagon </button>
+      <button onclick="pfadeout()"> Fade out </button>
+      <button onclick="pfadein()"> Fade In </button>
+  </body>
+</html>
