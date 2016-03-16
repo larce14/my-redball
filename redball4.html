@@ -64,8 +64,6 @@
            function moveSquare(){
            var square =
            $("#redball");
-           square.animate({"top":"-=7"},
-           1000, "linear");
            square.animate({"left":"+=10"},
            1000, "linear");
            square.animate({"top":"+=7"},
@@ -74,6 +72,60 @@
            1000, "linear");
             square.animate({"top":"-=7"},
            1000, "linear");
+          }
+          
+          function moveDownRight(){
+           var dwnrite =
+            $('#redball');
+            dwnrite.animate({'left':'+=10', 'top':'+=10'}, 
+            1000, 'linear');
+          }
+          
+          function moveUpLeft(){
+           var upleft =
+           $('#redball');
+           upleft.animate({'top':'-=10', 'left':'-=10'},
+           1000, 'linear');
+           
+          }
+          
+          function moveUpRight(){
+           var uprite = 
+           $('#redball');
+           uprite.animate({'top':'-=10','left':'+=10'},
+           1000,'linear');
+          }
+          
+          function moveTriangle(){
+           var tri =
+           $('#redball');
+           tri.animate({'left':'+=10', 'top':'+=10'},
+           1000,'linear');
+           tri.animate({"left":"-=20"},
+           1000,'linear');
+           tri.animate({'top':'-=10','left':'+=10'},
+           1000, 'linear');
+          }
+          
+          function octagon(){
+           var oct=
+           $('#redball');
+           oct.animate({"left":"+=10"},
+           1000, 'linear');
+           oct.animate({'left':'+=10', 'top':'+=10'},
+           1000, 'linear');
+           oct.animate({"top":"+=10"},
+           1000, 'linear');
+           oct.animate({"left":"-=10","top":"+=10"},
+           1000, 'linear');
+           oct.animate({"left":"-=10px"},
+           1000, 'linear');
+           oct.animate({'top':'-=10', 'left':'-=10'},
+           1000, 'linear');
+           oct.animate({"top":"-=10px"},
+           1000, 'linear');
+           oct.animate({'top':'-=10','left':'+=10'},
+           1000, 'linear');
           }
           
       </script>
@@ -87,7 +139,7 @@
       <p id="p2"> 
           So hold tight, hooold tight , oh every night! da dun da da da dun da da dun dun.
       </p>
-       <img id ="redball" src="http://lrn.icstars.org/redball.jpg" />
+       
         <button onclick="sayHello()">Hello world</button>
         <button onclick="moveRight()" > Move Right </button>
         <button onclick="moveTop()" > Move Top </button>
@@ -102,5 +154,6 @@
         <button onclick="octagon()"> Move octagon </button>
       <button onclick="pfadeout()"> Fade out </button>
       <button onclick="pfadein()"> Fade In </button>
+      <img id ="redball" src="http://lrn.icstars.org/redball.jpg" />
   </body>
 </html>
